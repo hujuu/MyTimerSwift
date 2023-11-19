@@ -14,6 +14,7 @@
 		6C482DFA2B0A5B8C004B6579 /* MyTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C482DF92B0A5B8C004B6579 /* MyTimerTests.swift */; };
 		6C482E042B0A5B8C004B6579 /* MyTimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C482E032B0A5B8C004B6579 /* MyTimerUITests.swift */; };
 		6C482E062B0A5B8C004B6579 /* MyTimerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C482E052B0A5B8C004B6579 /* MyTimerUITestsLaunchTests.swift */; };
+		6C482E132B0A647F004B6579 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C482E122B0A647F004B6579 /* SettingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		6C482DFF2B0A5B8C004B6579 /* MyTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C482E032B0A5B8C004B6579 /* MyTimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTimerUITests.swift; sourceTree = "<group>"; };
 		6C482E052B0A5B8C004B6579 /* MyTimerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTimerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6C482E122B0A647F004B6579 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				6C482DE82B0A5B8B004B6579 /* MyTimerApp.swift */,
 				6C482DEA2B0A5B8B004B6579 /* ContentView.swift */,
+				6C482E122B0A647F004B6579 /* SettingView.swift */,
 				6C482DEC2B0A5B8C004B6579 /* Assets.xcassets */,
 				6C482DEE2B0A5B8C004B6579 /* Preview Content */,
 			);
@@ -208,11 +211,12 @@
 			};
 			buildConfigurationList = 6C482DE02B0A5B8B004B6579 /* Build configuration list for PBXProject "MyTimer" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = ja;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = 6C482DDC2B0A5B8B004B6579;
 			productRefGroup = 6C482DE62B0A5B8B004B6579 /* Products */;
@@ -257,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C482E132B0A647F004B6579 /* SettingView.swift in Sources */,
 				6C482DEB2B0A5B8B004B6579 /* ContentView.swift in Sources */,
 				6C482DE92B0A5B8B004B6579 /* MyTimerApp.swift in Sources */,
 			);
@@ -428,8 +433,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,8 +462,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
