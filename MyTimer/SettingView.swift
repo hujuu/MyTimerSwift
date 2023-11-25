@@ -8,8 +8,30 @@
 import SwiftUI
 
 struct SettingView: View {
+    @State var timerValue = 10
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Color.backgroundSetting
+                .ignoresSafeArea()
+            VStack {
+                Spacer()
+                Text("\(timerValue)秒")
+                    .font(.largeTitle)
+                Spacer()
+                Picker(selection: $timerValue) {
+                    Text("10")
+                        .tag(10)
+                    Text("10")
+                        .tag(10)
+                    Text("10")
+                        .tag(10)
+                } label: {
+                    Text("選択")
+                }
+                .pickerStyle(.wheel)
+                Spacer()
+            }
+        }
     }
 }
 
