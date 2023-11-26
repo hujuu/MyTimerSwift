@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SettingView: View {
-    @State var timerValue = 10
+    @AppStorage("timer_value") var timerValue = 10
     var body: some View {
         ZStack {
             Color.backgroundSetting
@@ -21,8 +21,8 @@ struct SettingView: View {
                 Picker(selection: $timerValue) {
                     Text("10")
                         .tag(10)
-                    Text("10")
-                        .tag(10)
+                    Text("20")
+                        .tag(20)
                     Text("10")
                         .tag(10)
                 } label: {
